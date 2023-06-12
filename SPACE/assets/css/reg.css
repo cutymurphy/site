@@ -1,0 +1,274 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body {
+    background-image: url(../main_pics/7526d84a58987f74df63a4a370bd6715.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+}
+
+html {
+    height: 100%;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding: 1.4vw 5.4vw 1.4vw 1.4vw;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list:active {
+    color: red;
+}
+
+.menu-list li {
+    list-style: none;
+    margin-right: 2.0vw;
+}
+
+.menu-list li:last-child {
+    margin-right: 0;
+}
+
+.menu-list li a {
+    color: #ffffff;
+    font-family: "Neuropol", sans-serif;
+    font-weight: 300;
+    font-size: 2.1vw;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+header ul li a {
+    display: block;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 72px;
+    right: 5vw;
+    z-index: 8888;
+}
+
+header ul li ul li a {
+    width: 15vw;
+    padding: 4px;
+    background: black;
+}
+
+.menu-list li a:hover {
+    color: #c8642c;
+}
+
+.button {
+    padding: 0.42vw 1.68vw;
+    border: 0.14vw solid #fff;
+    background: transparent;
+    border-radius: 0.42vw;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* Home */
+.home {
+    position: relative;
+    width: 100%;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    pointer-events: auto;
+    transition: all 0.5s ease-out;
+}
+
+.home.show::before {
+    pointer-events: auto;
+}
+
+/* Form */
+.form_container {
+    position: fixed;
+    max-width: 30vw;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 101;
+    background: #fff;
+    padding: 1.75vw;
+    border-radius: 1.84vw;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: auto;
+    transition: all 0.4s ease-out;
+}
+
+.home.show .form_container {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.signup_form {
+    display: block;
+}
+
+.login_form {
+    display: block;
+}
+
+.form_container.active .signup_form {
+    display: block;
+}
+
+.form_container.active .login_form {
+    display: block;
+}
+
+.form_container h2 {
+    font-size: 2.1vw;
+    color: #0b0217;
+    text-align: center;
+}
+
+.input_box {
+    position: relative;
+    margin-top: 2.1vw;
+    width: 100%;
+    height: 2.8vw;
+}
+
+.input_box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 2.1vw;
+    color: #333;
+    transition: all 0.2s ease;
+    border-bottom: 0.105vw solid #aaaaaa;
+    box-sizing: border-box;
+}
+
+.input_box input:focus {
+    border-color: #F28A3F;
+}
+
+.input_box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4vw;
+    color: #707070;
+    padding-right: 1vw;
+}
+
+.input_box i.name,
+.input_box i.email,
+.input_box i.password {
+    left: 0;
+}
+
+.input_box input[type="text"],
+.input_box input[type="email"],
+.input_box input[type="password"] {
+    font-size: 1.2vw;
+}
+
+.input_box input:focus ~ i.name,
+.input_box input:focus ~ i.email,
+.input_box input:focus ~ i.password {
+    color: #F28A3F;
+    font-size: 1.2vw;
+}
+
+input::placeholder {
+    font-size: 1.2vw;
+}
+
+.input_box i.pw_hide {
+    right: 0;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.form_container a {
+    color: #F28A3F;
+    font-size: 1.2vw;
+}
+
+.form_container a:hover {
+    text-decoration: underline;
+}
+
+.form_container .button {
+    background: #F28A3F;
+    margin-top: 2.1vw;
+    width: 100%;
+    padding: 0.7vw 0;
+    border-radius: 0.7vw;
+}
+
+.signup {
+    font-size: 1vw;
+    text-align: center;
+    margin-top: 1.05vw;
+}
+
+.form_container .err .p {
+    font-size: 2vw;
+    text-align: center;
+    color: #f28a3f;
+}
+
+@font-face {
+    font-family: "Neuropol";
+    src: url("../fonts/Neuropol.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Avdira_B";
+    src: url("../fonts/Avdira_B.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lineyka";
+    src: url("../fonts/ofont.ru_Lineyka.ttf") format("truetype");
+}
+
+::-webkit-scrollbar {
+    width: 0.49vw;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}

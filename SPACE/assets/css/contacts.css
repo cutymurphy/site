@@ -1,0 +1,247 @@
+body {
+	background-color: rgba(0, 0, 0);
+}
+
+html {
+	height: 100%;
+}
+
+.main-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000;
+	padding: 1.4vw 5.4vw 1.4vw 1.4vw;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+
+}
+
+.menu-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-list:active {
+	color: red;
+}
+
+.menu-list li {
+	list-style: none;
+	margin-right: 2.0vw;
+}
+
+.menu-list li:last-child {
+	margin-right: 0;
+}
+
+.menu-list li a {
+	color: #FFFFFF;
+	font-family: 'Neuropol', sans-serif;
+	font-weight: 300;
+	font-size: 2.1vw;
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+header ul li a {
+	display: block;
+}
+
+header ul li ul {
+	position: absolute;
+	top: 72px;
+	right: 5vw;
+	z-index: 8888;
+}
+
+header ul li ul li a {
+	width: 15vw;
+	padding: 4px;
+	background: black;
+}
+
+.menu-list li a:hover {
+	color: #c8642c;
+}
+
+.author-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 1.0vw auto;
+	max-width: 65vw;
+	max-height: 50vw;
+	background: linear-gradient(to right, black 50%, white 50%);
+}
+
+.author-img {
+	order: 1;
+	flex-basis: 50%;
+}
+
+.author-img img {
+	margin-bottom: -5px;
+	max-width: 100%;
+	height: 100%;
+}
+
+.author-info {
+	flex-basis: 50%;
+	order: 2;
+	line-height: 1.0;
+}
+
+
+.text-1 {
+	font-family: 'Neuropol', sans-serif;
+	font-size: 2.1vw;
+	font-weight: bold;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 2.0vw;
+}
+
+.text-2 {
+	color: #878787;
+	font-family: 'Avdira_B', sans-serif;
+	font-size: 1.2vw;
+	margin-left: 3.5vw;
+}
+
+.text-3 {
+	font-family: 'Avdira_B', sans-serif;
+	font-size: 1.4vw;
+	margin-left: 3.5vw;
+	margin-right: 3.5vw;
+}
+
+.map {
+	margin-left: 3.5vw;
+	margin-right: 3.5vw;
+	margin-bottom: 2.0vw;
+	position: relative;
+	padding-bottom: 40%;
+	height: 0;
+	overflow: hidden;
+}
+
+.map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90%;
+	height: 100%;
+}
+
+.icon {
+	margin-left: 3.5vw;
+}
+
+.icon a {
+	display: inline-block;	
+}
+
+.icon img {
+	height: auto;
+}
+
+.my-button {
+	margin-top: 10vw;
+}
+
+.my-button a {
+	position: absolute;
+	cursor: pointer;
+	bottom: 1.5vw;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	display: inline-block;
+	width: 10.8vw;
+	height: 3.15vw;
+	line-height: 3.15vw;
+	border-radius: 3.15vw;
+	font-family: 'BASCELIK', sans-serif;
+	font-size: 1.4vw;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.21vw;
+	font-weight: 100;
+	color: #FFF;
+	box-shadow: 0 0.56vw 1.05vw rgba(0, 0, 0, .1);
+	transition: .3s;
+}
+
+.my-button a:hover {
+	background: #fff;
+	color: #cd5600;
+	transform-origin: bottom center;
+}
+
+form {
+	background-color:#000000;
+	width:70%;
+	margin:0 auto;
+	padding:15px;
+}
+
+@media screen and (min-width: 2160px) {
+	.icon img {
+		max-width: 90%;
+		height: auto;
+	}
+	.icon a {
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 2160px) {
+	.icon img {
+		max-width: 50%;
+		height: auto;
+	}
+	.icon a {
+		margin-right: -50px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.icon img {
+		max-width: 35%;
+		height: auto;
+	}
+	.icon a {
+		margin-right: -75px;
+	}
+}
+
+@font-face {
+	font-family: "Neuropol";
+	src: url("../fonts/Neuropol.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Avdira_B";
+	src: url("../fonts/Avdira_B.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "BASCELIK";
+	src: url("../fonts/BASCELIK.ttf") format("truetype");
+}
+
+::-webkit-scrollbar {
+	width: 0.49vw;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #000000;
+}

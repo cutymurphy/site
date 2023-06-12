@@ -1,0 +1,224 @@
+body {
+	background-color: #000000;
+}
+
+.main-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000;
+	padding: 1.4vw 5.4vw 1.4vw 1.4vw;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+
+}
+
+.menu-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-list:active {
+	color: red;
+}
+
+.menu-list li {
+	list-style: armenian;
+	margin-right: 2.0vw;
+}
+
+.menu-list li:last-child {
+	margin-right: 0;
+}
+
+.menu-list li a {
+	color: #FFFFFF;
+	font-family: 'Neuropol', sans-serif;
+	font-weight: 300;
+	font-size: 2.1vw;
+	text-decoration: none;
+	transition: color 0.3s ease-in-out;
+}
+
+header ul li a {
+	display: block;
+}
+
+header ul li ul {
+	position: absolute;
+	top: 72px;
+	right: 5vw;
+	z-index: 8888;
+}
+
+header ul li ul li a {
+	width: 15vw;
+	padding: 4px;
+	background: black;
+}
+
+.menu-list li a:hover {
+	color: #c8642c;
+}
+
+.image-container {
+	position: relative;
+}
+
+.image-container img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.text-container {
+	position: absolute;
+	top: 30%;
+	max-width: 38%;
+	transform: translateY(-50%);
+	padding: 2.1vw;
+}
+
+.text-container-1 p {
+	font-size: 5.6vw;
+	line-height: 1.5;
+	margin: 0;
+	color: #f28a3f;
+	font-family: 'space age', sans-serif;
+}
+
+.text-container-2 p {
+	font-size: 1.12vw;
+	line-height: 1.5;
+	margin: 0;
+	color: #FFFFFF;
+	font-family: 'Neuropol', sans-serif;
+}
+
+.my-button a {
+	position: absolute;
+	cursor: pointer;
+	bottom: 3.5vw;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	display: inline-block;
+	width: 9.8vw;
+	height: 3.15vw;
+	line-height: 3.15vw;
+	border-radius: 3.15vw;
+	margin: auto;
+	font-family: 'BASCELIK', sans-serif;
+	font-size: 1.4vw;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.21vw;
+	font-weight: 100;
+	color: #FFF;
+	box-shadow: 0 0.56vw 1.05vw rgba(0, 0, 0, .1);
+	transition: .3s;
+}
+
+.my-button a:hover {
+	background: #fff;
+	color: #cd5600;
+	transform-origin: bottom center;
+}
+
+
+.text-container-3 p {
+	text-align: center;
+	max-width: 60%;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+
+
+.system-dialog {
+	font-size: 1.26vw;
+	color: #ffffff;
+	font-family: 'Lineyka', sans-serif;
+	font-weight: 500;
+}
+
+.mine-dialog {
+	font-size: 2.1vw;
+	color: #f28a3f;
+	font-family: 'Neuropol', sans-serif;
+}
+
+.my-button-1 {
+	margin-top: 1.4vw;
+	margin-bottom: 3.5vw;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.my-button-1 a {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	display: inline-block;
+	width: 9.8vw;
+	height: 3.15vw;
+	line-height: 3.15vw;
+	border-radius: 3.15vw;
+	margin: auto;
+	font-family: 'BASCELIK', sans-serif;
+	font-size: 1.4vw;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.21vw;
+	font-weight: 100;
+	color: #FFF;
+	box-shadow: 0 0.56vw 1.05vw rgba(0, 0, 0, .1);
+	transition: .3s;
+}
+
+.my-button-1 a:hover {
+	background: #fff;
+	color: #cd5600;
+	transform-origin: bottom center;
+}
+
+@font-face {
+	font-family: "space age";
+	src: url("../fonts/space age.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Neuropol";
+	src: url("../fonts/Neuropol.ttf") format("truetype");
+}
+
+
+@font-face {
+	font-family: "BASCELIK";
+	src: url("../fonts/BASCELIK.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Avdira_B";
+	src: url("../fonts/Avdira_B.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Lineyka";
+	src: url("../fonts/ofont.ru_Lineyka.ttf") format("truetype");
+}
+
+
+::-webkit-scrollbar {
+	width: 0.49vw;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #000000;
+}
